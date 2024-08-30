@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = API_ID
-API_HASH = "API_HASH"
+API_ID = 19612077
+API_HASH = "5b66d8462d913e8427339fbbe1bbd3a7"
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = "BOT_TOKEN"
+BOT_TOKEN = "7377354798:AAEcvF0XatSHU9ArDxeBmMPdCdbww0V4BT4"
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = "MONGO_DB_URI"
+MONGO_DB_URI = "mongodb+srv://bheemraoambedkar13:bheemraoambedkar13@cluster0.98n5b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = LOG_GROUP_ID
+LOG_GROUP_ID = -1002162515059
 
 # Get this value from @ultron2_robot on Telegram by /id
-OWNER_ID = OWNER_ID
+OWNER_ID = 7217885929
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -62,7 +62,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 
 
 # Get your pyrogram v2 session from Replit
-STRING1 = "STRING_SESSION"
+STRING1 = "BQErQa0Ak6xIzSS-m_ll9NHYxw0q1x6Gfw0PQIhO_Qya2mTWKkfqGit5dX7kjyOiJqeoi6Nw4hPVAeQpaJQwF2A0aFpeyiD7kw54w-Z0Qd_wNuNZXHTrZD24Bv2NQSv9yPaHDUHrulD5kUrvt_wKOiTyMam9e8nTpikEDiy33NzZFUdtBpgAtqHawowAuFnD3ZR0OVB2_vZ2ZEdp8HYnQFe2uma7jDaZRvAwHbG9h8mfEUYR10v2CiLsYRPMcdRV2_s1TVipaj3zwMJQxCixy8KzqfmSsogXmTe04ArVwzl7ZVbjwlu7zcMwVKxEEAPfI-N862DUxXp0V6gKauCrCQd9i7QgAAAAGuODLpAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -77,20 +77,20 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = "https://graph.org/file/f586172fe40a0b5d0b0df.jpg"
+START_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
 
-PING_IMG_URL = "https://graph.org/file/f586172fe40a0b5d0b0df.jpg"
+PING_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
 
-PLAYLIST_IMG_URL = "https://graph.org/file/763a841a2ad5cbb1e2fc5.jpg"
-STATS_IMG_URL = "https://graph.org/file/f586172fe40a0b5d0b0df.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+STATS_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+STREAM_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/aed6856a68696bd4042eb.jpg"
 
 
 def time_to_seconds(time):
@@ -102,13 +102,13 @@ DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
-    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+    if not re.match("https://t.me/cymusicsupport", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
 
 if SUPPORT_GROUP:
-    if not re.match("(?:http|https)://", SUPPORT_GROUP):
+    if not re.match("https://t.me/cymusicchat", SUPPORT_GROUP):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
